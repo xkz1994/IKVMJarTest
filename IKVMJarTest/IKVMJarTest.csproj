@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="IKVM" Version="8.2.1" />
+		<PackageReference Include="IKVM.Maven.Sdk" Version="1.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<IkvmReference Include="jar\commons-lang3-3.12.0.jar">
+			<AssemblyVersion>3.12.0.0</AssemblyVersion>
+		</IkvmReference>
+		<IkvmReference Include="jar\spire.xls.free-5.1.0.jar">
+			<AssemblyVersion>5.1.0.0</AssemblyVersion>
+		</IkvmReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<MavenReference Include="hutool-all">
+			<GroupId>cn.hutool</GroupId>
+			<ArtifactId>hutool-all</ArtifactId>
+			<Classifier></Classifier>
+			<Version>5.8.1</Version>
+		</MavenReference>
+	</ItemGroup>
+
+</Project>
