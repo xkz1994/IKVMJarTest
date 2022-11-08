@@ -8,8 +8,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="IKVM" Version="8.2.1" />
-		<PackageReference Include="IKVM.Maven.Sdk" Version="1.0.1" />
+		<PackageReference Include="IKVM" Version="8.2.3" />
+		<PackageReference Include="IKVM.Maven.Sdk" Version="1.0.2" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -18,6 +18,9 @@
 		</IkvmReference>
 		<IkvmReference Include="jar\spire.xls.free-5.1.0.jar">
 			<AssemblyVersion>5.1.0.0</AssemblyVersion>
+		</IkvmReference>		
+		<IkvmReference Include="jar\pdfbox-app-2.0.27.jar">
+			<AssemblyVersion>2.0.27.0</AssemblyVersion>
 		</IkvmReference>
 	</ItemGroup>
 
@@ -28,6 +31,12 @@
 			<Classifier></Classifier>
 			<Version>5.8.1</Version>
 		</MavenReference>
+		<!--<MavenReference Include="pdfbox">
+			<GroupId>org.apache.pdfbox</GroupId>
+			<ArtifactId>pdfbox</ArtifactId>
+			<Classifier></Classifier>
+			<Version>2.0.27</Version>
+		</MavenReference>-->
 	</ItemGroup>
 
 </Project>
